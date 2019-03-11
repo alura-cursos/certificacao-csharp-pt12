@@ -1,0 +1,94 @@
+﻿1) Alice precisa compartilhar um documento secreto
+
+👩 Alice                            👨 Bob
+
+                                                                                                 
+📄                  ---->                                                            
+
+
+
+
+
+2) Bob receberá o documento de Alice
+
+👩 Alice                            👨 Bob
+
+                                                                                                 
+📄                  --📄-->         📄                                                 
+
+
+
+
+
+3) Mas o documento pode ser interceptado
+
+👩 Alice           🕵 espião        👨 Bob
+
+                                                                                                 
+📄                  --📄-->         📄                                                 
+
+
+
+
+
+4) Então Alice resolve criar uma chave...
+
+👩 Alice                             👨 Bob
+
+🔑 chave (AES)                                                                                                 
+📄                  --📄-->          📄                                
+
+
+
+
+
+5) ...e criptografar o documento
+
+👩 Alice                            👨 Bob
+
+🔑 chave                                                                                                  
+📄🔒              --📄🔒-->         📄🔒                              
+
+
+
+
+
+6) Mas agora Bob não consegue ler o documento!
+
+👩 Alice                            👨 Bob
+
+🔑 chave                                                                                                  
+📄🔒              --📄🔒-->         📄🔒????                              
+
+
+
+
+
+7) Então Alice compartilha a chave com Bob
+
+👩 Alice                            👨 Bob
+
+🔑 chave          --🔑---->        🔑 chave                                                                      
+📄🔒              --📄🔒-->         📄🔒                              
+
+
+
+
+
+8) Mas agora a chave também pode ser interceptada!
+
+👩 Alice          🕵 espião         👨 Bob
+
+🔑 chave          --🔑---->        🔑 chave                                                                      
+📄🔒              --📄🔒-->         📄🔒                              
+
+
+
+
+
+9) Esse é o problema com a encriptação simétrica
+
+👩 Alice          🕵 espião         👨 Bob
+
+🔑 chave          --🔑---->        🔑 chave                                                                      
+📄🔒              --📄🔒-->         📄🔒

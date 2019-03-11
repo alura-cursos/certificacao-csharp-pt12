@@ -1,0 +1,118 @@
+﻿1) Alice precisa compartilhar um documento secreto
+
+👩 Alice                        👨 Bob
+
+                                                                                                 
+📄               ---->                                                            
+
+
+
+
+
+2) Bob receberá o documento de Alice
+
+👩 Alice                        👨 Bob
+
+                                                                                                 
+📄              --📄-->         📄                                                 
+
+
+
+
+
+3) Mas o documento pode ser interceptado
+
+👩 Alice                        👨 Bob
+
+                                                                                                 
+📄              --📄-->         📄                                                   
+
+
+
+
+
+4) Então Alice e Bob criam chaves RSA...
+
+👩 Alice                        👨 Bob
+
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)              🔑 pública (Bob)                                                                                          
+                                 
+
+
+
+5) ...e Alice solicita a 🔑 pública de Bob...
+
+👩 Alice                        👨 Bob
+
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)   <--🔑--    🔑 pública (Bob)                                                                                          
+🔑 pública (Bob)
+
+
+
+6) ...para encriptar seu documento
+
+👩 Alice                        👨 Bob
+
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)   <--🔑--    🔑 pública (Bob)                                                                                          
+🔑 pública (Bob)
+📄🔒                         
+
+
+7) Então Alice envia o 📄🔒 codificado
+
+👩 Alice                        👨 Bob
+
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)              🔑 pública (Bob)                                                                     
+🔑 pública (Bob)
+📄🔒              --📄🔒-->       📄🔒   
+
+
+8) Mas agora a chave também pode ser interceptada!
+
+👩 Alice         🕵 espião     👨 Bob
+
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)   <--🔑--    🔑 pública (Bob)                                                                                          
+🔑 pública (Bob)                                                                  
+📄🔒            --📄🔒-->       📄                            
+
+
+9) Sem problemas! A 🔑 pública não serve
+para DECIFRAR o documento!
+👩 Alice         🕵 espião      👨 Bob
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)   <--🔑--    🔑 pública (Bob)                                                                                          
+🔑 pública (Bob)                                                                 
+📄🔒            --📄🔒-->       📄🔒
+
+
+
+10) Bob usa sua 🔑 privada para abrir o documento
+
+👩 Alice         🕵 espião      👨 Bob
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)   <--🔑--    🔑 pública (Bob)                                                                                          
+🔑 pública (Bob)                                                                    
+📄🔒            --📄🔒-->       📄
+ 
+
+
+11) Alice e Bob só precisam proteger as 🔑 privadas!
+
+👩 Alice         🕵 espião      👨 Bob
+
+🔑 privada (Alice)              🔑 privada (Bob)                                                                                                
+🔑 pública (Alice)   <--🔑--    🔑 pública (Bob)                                                                                          
+📄🔒                             📄
+ 
