@@ -14,17 +14,9 @@ namespace Program06._03
             //TAREFA: ALICE PRECISA ENVIAR UMA MENSAGEM SECRETA PARA BOB.
             //IMPLEMENTE O CÓDIGO NECESSÁRIO UTILIZANDO A CLASSE PESSOA ABAIXO.
 
-            Pessoa alice = new Pessoa("Alice");
-            Pessoa bob = new Pessoa("Bob");
-
-            string chavePublicaDoBob = bob.ChavePublica;
-            var bytesCodificados = alice.CodificarMensagem(mensagemOriginal, chavePublicaDoBob);
-
-            mensagemDecodificada = bob.DecodificarMensagem(bytesCodificados);
-
             Console.WriteLine("string decifrada: {0}", mensagemDecodificada);
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         public class Pessoa
@@ -110,7 +102,7 @@ namespace Program06._03
                 ASCIIEncoding conversor2 = new ASCIIEncoding();
                 return conversor2.GetString(bytesDecifrados);
             }
-            
+
             void ExibirBytes(string titulo, byte[] bytes)
             {
                 Console.Write(titulo);

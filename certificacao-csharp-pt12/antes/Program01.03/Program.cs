@@ -7,25 +7,16 @@ namespace Program01._03
     {
         static void Main(string[] args)
         {
-            string json 
+            string json
                 = "{" +
                         "\"Diretor\":\"James Cameron\"," +
                         "\"Titulo\":\"Titanic\"," +
-                        "\"DuracaoMinutos\":abc" +
+                        "\"DuracaoMinutos\":194" +
                     "}";
 
-            try
-            {
-                Filme filme = JsonConvert.DeserializeObject<Filme>(json);
-                Console.WriteLine("Dados do objeto Filme: ");
-                Console.WriteLine(filme);
-            }
-            catch(JsonReaderException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-
+            Filme filme = JsonConvert.DeserializeObject<Filme>(json);
+            Console.WriteLine("Dados do objeto Filme: ");
+            Console.WriteLine(filme);
             Console.ReadLine();
         }
     }

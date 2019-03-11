@@ -8,28 +8,28 @@ namespace Program01_02
     {
         static void Main(string[] args)
         {
-            Filme filme = new Filme(diretor: "Tim Burton",
-                titulo: "A Fantástica Fábrica de Chocolate",
-                duracaoMinutos: 115);
-            XmlSerializer serializador = new XmlSerializer(typeof(Filme));
+            //Filme filme = new Filme(diretor: "Tim Burton", 
+            //    titulo: "A Fantástica Fábrica de Chocolate", 
+            //    duracaoMinutos: 115);
+            //XmlSerializer serializador = new XmlSerializer(typeof(Filme));
 
-            TextWriter writer = new StringWriter();
-            serializador.Serialize(textWriter: writer, o: filme);
-            writer.Close();
+            //TextWriter writer = new StringWriter();
+            //serializador.Serialize(textWriter: writer, o: filme);
+            //writer.Close();
 
-            string xml = writer.ToString();
+            //string xml = writer.ToString();
 
-            Console.WriteLine();
-            Console.WriteLine("Versão XML:");
-            Console.WriteLine(xml);
+            //Console.WriteLine();
+            //Console.WriteLine("Versão XML:");
+            //Console.WriteLine(xml);
 
-            TextReader reader = new StringReader(xml);
+            //TextReader reader = new StringReader(xml);
 
-            Filme filme2 = serializador.Deserialize(reader) as Filme;
+            //Filme filme2 = serializador.Deserialize(reader) as Filme;
 
-            Console.WriteLine();
-            Console.WriteLine("Dados do objeto Filme: ");
-            Console.WriteLine(filme2);
+            //Console.WriteLine();
+            //Console.WriteLine("Dados do objeto Filme: ");
+            //Console.WriteLine(filme2);
 
             Console.ReadLine();
         }

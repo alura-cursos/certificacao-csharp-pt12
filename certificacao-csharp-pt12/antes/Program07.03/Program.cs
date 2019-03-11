@@ -43,7 +43,7 @@ namespace Program07._03
                 //TAREFA: ARMAZENAR CHAVES NO NÍVEL DE MÁQUINA, NÃO USUÁRIO DO WINDOWS
                 CspParameters cspParameters = new CspParameters();
                 cspParameters.KeyContainerName = "MeuContainer";
-                cspParameters.Flags = CspProviderFlags.UseMachineKeyStore;
+
                 RSACryptoServiceProvider encriptadorRSA = new RSACryptoServiceProvider(cspParameters);
 
                 // pega as chaves do criptografador

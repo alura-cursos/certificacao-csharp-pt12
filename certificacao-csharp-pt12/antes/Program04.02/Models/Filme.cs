@@ -21,16 +21,8 @@ namespace Filmes.Models
         }
 
         public int ID { get; set; }
-        [Required]
-        [MinLength(5)]
-        [MaxLength(255)]
         public string Diretor { get; set; }
-        [Required]
-        [MinLength(5)]
-        [MaxLength(255)]
-        [RegularExpression("^([a-z]|[A-Z]| )+$")]
         public string Titulo { get; set; }
-        [Range(30, 240)]
         public int DuracaoMinutos { get; set; }
 
     }

@@ -41,9 +41,7 @@ namespace Program07._01
                 // Cria um novo RSA para criptografar os dados
 
                 //TAREFA: ARMAZENAR A CHAVE PRIVADA COM SEGURANÇA
-                CspParameters cspParameters = new CspParameters();
-                cspParameters.KeyContainerName = "MeuContainer";
-                RSACryptoServiceProvider encriptadorRSA = new RSACryptoServiceProvider(cspParameters);
+                RSACryptoServiceProvider encriptadorRSA = new RSACryptoServiceProvider();
 
                 // pega as chaves do criptografador
                 ChavePublica = encriptadorRSA.ToXmlString(includePrivateParameters: false);
@@ -81,9 +79,7 @@ namespace Program07._01
                 // Cria um novo RSA para criptografar os dados
 
                 //TAREFA: ARMAZENAR A CHAVE PRIVADA COM SEGURANÇA
-                CspParameters cspParameters = new CspParameters();
-                cspParameters.KeyContainerName = "MeuContainer";
-                RSACryptoServiceProvider encriptadorRSA = new RSACryptoServiceProvider(cspParameters);
+                RSACryptoServiceProvider encriptadorRSA = new RSACryptoServiceProvider();
 
                 // Agora diga ao encriptador para usar a chave pública para criptografar os dados
                 encriptadorRSA.FromXmlString(chavePublicaDestinatario);

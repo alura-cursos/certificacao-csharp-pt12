@@ -18,7 +18,7 @@ namespace Program10._01
         static void ExibirHash(string mensagem)
         {
             //TAREFA: CALCULAR O HASHCODE PARA A MENSAGEM
-            Console.WriteLine("Hash para {0} é: {1:X}", mensagem, mensagem.GetHashCode());
+            //Console.WriteLine("Hash para {0} é: {1:X}", mensagem, ???);
         }
 
     }

@@ -44,10 +44,6 @@ namespace Program07._02
                 cspParameters.KeyContainerName = "MeuContainer";
 
                 //TAREFA: REINICIAR AS CHAVES ASSIMÉTRICAS
-                //RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(cspParameters);
-                //rsa.PersistKeyInCsp = false;
-                //rsa.Clear();
-
                 RSACryptoServiceProvider encriptadorRSA = new RSACryptoServiceProvider(cspParameters);
 
                 // pega as chaves do criptografador

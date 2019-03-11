@@ -8,9 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Program06._03</RootNamespace>
     <AssemblyName>Program06.03</AssemblyName>
-	<Target Name="ResolveNuGetPackageAssets"
-	 DependsOnTargets="$(ResolveNuGetPackageAssetsDependsOn)"
-	 Condition="'$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')">	
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
